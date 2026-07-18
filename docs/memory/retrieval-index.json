@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "updatedAt": "2026-07-18T16:03:39.520Z",
+  "projectRoot": "/Volumes/star/claude/AI Agent x Web3 开启你的第一桶赏金",
+  "projectMarker": ".ai_project.md",
+  "aiProjectHash": "sha256:0791d9c62c2bd82fc8edb285078c0a509e9894593fb0be33540f1153832267b7",
+  "docsCount": 22,
+  "coreFiles": [
+    {
+      "path": ".ai_project.md",
+      "exists": true
+    },
+    {
+      "path": "AGENTS.md",
+      "exists": false
+    },
+    {
+      "path": "docs/INDEX.md",
+      "exists": true
+    },
+    {
+      "path": "docs/project-structure.md",
+      "exists": true
+    },
+    {
+      "path": "docs/roadmap.md",
+      "exists": true
+    }
+  ],
+  "docs": [
+    {
+      "path": "docs/project-structure.md",
+      "purpose": "Project directory, module, and important-file map.",
+      "readWhen": "Before structural changes or broad feature work.",
+      "owner": "Project Assistant",
+      "updateTrigger": "Directories, entry points, modules, or important files change.",
+      "validation": "Paths reflect current repository."
+    },
+    {
+      "path": "docs/roadmap.md",
+      "purpose": "Current plan, next actions, risks, and milestones.",
+      "readWhen": "Before planning or resuming work.",
+      "owner": "Project Assistant",
+      "updateTrigger": "Plans, priorities, milestones, or risks change.",
+      "validation": "Next actions are current and actionable."
+    },
+    {
+      "path": "docs/architecture/bounty-proof.md",
+      "purpose": "BountyProof data flow, module boundaries, contract and security invariants.",
+      "readWhen": "Before changing scoring, hashing, KeeperHub or contract boundaries.",
+      "owner": "Product Architect / Smart Contract Engineer",
+      "updateTrigger": "Evidence model or execution changes.",
+      "validation": "Unit and contract tests pass."
+    },
+    {
+      "path": "docs/architecture/confidential-strategy-vault.md",
+      "purpose": "Nox strategy packing, encrypted handle flow, ACL and wallet boundaries.",
+      "readWhen": "Before changing Nox, wallet, decrypt or deployment behavior.",
+      "owner": "Smart Contract / Frontend",
+      "updateTrigger": "Nox SDK, ABI, encoding or network changes.",
+      "validation": "Contract/unit/build checks pass."
+    },
+    {
+      "path": "docs/features/bounty-radar.md",
+      "purpose": "Workspace UX, states, responsive and acceptance behavior.",
+      "readWhen": "Before UI or interaction changes.",
+      "owner": "Frontend / Product",
+      "updateTrigger": "Screen behavior or score presentation changes.",
+      "validation": "Three target viewports pass."
+    },
+    {
+      "path": "docs/api/contracts.md",
+      "purpose": "Opportunity and proof preview API contracts.",
+      "readWhen": "Before routes, client errors or payload changes.",
+      "owner": "Backend / API",
+      "updateTrigger": "API contract changes.",
+      "validation": "Types, tests and HTTP smoke pass."
+    },
+    {
+      "path": "docs/competition/keeperhub-2026.md",
+      "purpose": "Official KeeperHub snapshot and submission plan.",
+      "readWhen": "Before registration, integration or submission.",
+      "owner": "Product Lead / Competition Ops",
+      "updateTrigger": "Official rules change.",
+      "validation": "Official sources rechecked."
+    },
+    {
+      "path": "docs/competition/wtf-nox-2026.md",
+      "purpose": "Official WTF/Nox snapshot, build scope and submission checklist.",
+      "readWhen": "Before Nox deployment, public release, video or submission.",
+      "owner": "Product Lead / Competition Ops",
+      "updateTrigger": "Rules, deliverables or submission status changes.",
+      "validation": "Official sources and public evidence rechecked."
+    },
+    {
+      "path": "docs/competition/winning-strategy.md",
+      "purpose": "KeeperHub product wedge, demo arc and judging-risk strategy.",
+      "readWhen": "Before feature prioritization, demo recording or submission.",
+      "owner": "Product Lead / Competition Ops",
+      "updateTrigger": "Judging rules or product narrative changes.",
+      "validation": "Strategies map to official criteria and real evidence."
+    },
+    {
+      "path": "docs/deployment/local-and-sepolia.md",
+      "purpose": "Local commands and human-gated Sepolia path.",
+      "readWhen": "Before build or testnet deployment.",
+      "owner": "Release / Smart Contract Engineer",
+      "updateTrigger": "Toolchain or deployment changes.",
+      "validation": "Build passes; deployment evidence when approved."
+    },
+    {
+      "path": "docs/decisions/0001-keeperhub-first.md",
+      "purpose": "Why KeeperHub is the first competition.",
+      "readWhen": "Before replacing the first target.",
+      "owner": "Product Architect",
+      "updateTrigger": "Competition priority changes.",
+      "validation": "New official evidence and ADR required."
+    },
+    {
+      "path": "docs/decisions/0002-simulation-before-broadcast.md",
+      "purpose": "Why KeeperHub simulation and real broadcast are separate human-gated phases.",
+      "readWhen": "Before changing KeeperHub execution, credentials, wallet or broadcast boundaries.",
+      "owner": "Product Architect / Security",
+      "updateTrigger": "Direct Execution or broadcast model changes.",
+      "validation": "Tests prove the default path cannot broadcast."
+    },
+    {
+      "path": "docs/maintenance/known-issues.md",
+      "purpose": "Known issues and recurring problems.",
+      "readWhen": "Before debugging or risk review.",
+      "owner": "Debugger / Project Assistant",
+      "updateTrigger": "New recurring issue or resolved issue.",
+      "validation": "Issues include status and validation."
+    },
+    {
+      "path": "docs/maintenance/development-log.md",
+      "purpose": "Durable project progress log.",
+      "readWhen": "Before handoff or project review.",
+      "owner": "Project Assistant",
+      "updateTrigger": "Meaningful project state changes.",
+      "validation": "Entries link to relevant docs or files."
+    },
+    {
+      "path": "docs/maintenance/technical-debt.md",
+      "purpose": "Technical debt and cleanup candidates.",
+      "readWhen": "Before refactors or planning.",
+      "owner": "Project Assistant",
+      "updateTrigger": "Debt is found, resolved, or reprioritized.",
+      "validation": "Items have impact and owner/status."
+    },
+    {
+      "path": "docs/memory/README.md",
+      "purpose": "Project memory evidence and invalidation rules.",
+      "readWhen": "Before adding evidence, source hashes, retrieval records, or invalidations.",
+      "owner": "Project Assistant",
+      "updateTrigger": "Evidence schema, retrieval index, or invalidation policy changes.",
+      "validation": "Evidence JSONL and invalidation JSONL parse correctly."
+    },
+    {
+      "path": "docs/memory/retrieval-index.json",
+      "purpose": "Machine-readable project memory retrieval index.",
+      "readWhen": "Before summarizing or routing project memory reads.",
+      "owner": "Project Assistant",
+      "updateTrigger": "Durable docs, summaries, or memory routes change.",
+      "validation": "JSON parses and paths exist or are marked missing."
+    },
+    {
+      "path": "docs/memory/evidence/index.jsonl",
+      "purpose": "Evidence records for durable project memory and KG entries.",
+      "readWhen": "Before verifying durable memory claims.",
+      "owner": "Project Assistant",
+      "updateTrigger": "New durable memory or KG evidence is recorded.",
+      "validation": "Each non-empty line is valid JSON with required fields."
+    },
+    {
+      "path": "docs/memory/invalidations.jsonl",
+      "purpose": "Invalidated or superseded memory records.",
+      "readWhen": "Before trusting old project facts.",
+      "owner": "Project Assistant",
+      "updateTrigger": "Project facts, graph nodes, docs, APIs, or modules are superseded.",
+      "validation": "Each non-empty line is valid JSON with required fields."
+    },
+    {
+      "path": "docs/knowledge/graph-schema.md",
+      "purpose": "Knowledge graph node, edge, evidence, and validation schema.",
+      "readWhen": "Before creating or updating graph relationships.",
+      "owner": "Project Assistant",
+      "updateTrigger": "Graph schema or validation rules change.",
+      "validation": "Schema matches project-graph.json."
+    },
+    {
+      "path": "docs/knowledge/project-graph.json",
+      "purpose": "Machine-readable project relationship graph.",
+      "readWhen": "Before impact analysis or cross-layer work.",
+      "owner": "Project Assistant",
+      "updateTrigger": "Feature, module, file, API, DB, test, ADR, or risk relationships change.",
+      "validation": "All nodes and edges have evidence."
+    },
+    {
+      "path": "docs/knowledge/graph-index.md",
+      "purpose": "Human-readable graph summary and activation notes.",
+      "readWhen": "Before relationship lookup or handoff.",
+      "owner": "Project Assistant",
+      "updateTrigger": "project-graph.json changes.",
+      "validation": "Summary reflects current graph."
+    }
+  ],
+  "entries": [
+    {
+      "path": "docs/project-structure.md",
+      "purpose": "Project directory, module, and important-file map.",
+      "readWhen": "Before structural changes or broad feature work.",
+      "owner": "Project Assistant",
+      "updateTrigger": "Directories, entry points, modules, or important files change.",
+      "validation": "Paths reflect current repository."
+    },
+    {
+      "path": "docs/roadmap.md",
+      "purpose": "Current plan, next actions, risks, and milestones.",
+      "readWhen": "Before planning or resuming work.",
+      "owner": "Project Assistant",
+      "updateTrigger": "Plans, priorities, milestones, or risks change.",
+      "validation": "Next actions are current and actionable."
+    },
+    {
+      "path": "docs/architecture/bounty-proof.md",
+      "purpose": "BountyProof data flow, module boundaries, contract and security invariants.",
+      "readWhen": "Before changing scoring, hashing, KeeperHub or contract boundaries.",
+      "owner": "Product Architect / Smart Contract Engineer",
+      "updateTrigger": "Evidence model or execution changes.",
+      "validation": "Unit and contract tests pass."
+    },
+    {
+      "path": "docs/architecture/confidential-strategy-vault.md",
+      "purpose": "Nox strategy packing, encrypted handle flow, ACL and wallet boundaries.",
+      "readWhen": "Before changing Nox, wallet, decrypt or deployment behavior.",
+      "owner": "Smart Contract / Frontend",
+      "updateTrigger": "Nox SDK, ABI, encoding or network changes.",
+      "validation": "Contract/unit/build checks pass."
+    },
+    {
+      "path": "docs/features/bounty-radar.md",
+      "purpose": "Workspace UX, states, responsive and acceptance behavior.",
+      "readWhen": "Before UI or interaction changes.",
+      "owner": "Frontend / Product",
+      "updateTrigger": "Screen behavior or score presentation changes.",
+      "validation": "Three target viewports pass."
+    },
+    {
+      "path": "docs/api/contracts.md",
+      "purpose": "Opportunity and proof preview API contracts.",
+      "readWhen": "Before routes, client errors or payload changes.",
+      "owner": "Backend / API",
+      "updateTrigger": "API contract changes.",
+      "validation": "Types, tests and HTTP smoke pass."
+    },
+    {
+      "path": "docs/competition/keeperhub-2026.md",
+      "purpose": "Official KeeperHub snapshot and submission plan.",
+      "readWhen": "Before registration, integration or submission.",
+      "owner": "Product Lead / Competition Ops",
+      "updateTrigger": "Official rules change.",
+      "validation": "Official sources rechecked."
+    },
+    {
+      "path": "docs/competition/wtf-nox-2026.md",
+      "purpose": "Official WTF/Nox snapshot, build scope and submission checklist.",
+      "readWhen": "Before Nox deployment, public release, video or submission.",
+      "owner": "Product Lead / Competition Ops",
+      "updateTrigger": "Rules, deliverables or submission status changes.",
+      "validation": "Official sources and public evidence rechecked."
+    },
+    {
+      "path": "docs/competition/winning-strategy.md",
+      "purpose": "KeeperHub product wedge, demo arc and judging-risk strategy.",
+      "readWhen": "Before feature prioritization, demo recording or submission.",
+      "owner": "Product Lead / Competition Ops",
+      "updateTrigger": "Judging rules or product narrative changes.",
+      "validation": "Strategies map to official criteria and real evidence."
+    },
+    {
+      "path": "docs/deployment/local-and-sepolia.md",
+      "purpose": "Local commands and human-gated Sepolia path.",
+      "readWhen": "Before build or testnet deployment.",
+      "owner": "Release / Smart Contract Engineer",
+      "updateTrigger": "Toolchain or deployment changes.",
+      "validation": "Build passes; deployment evidence when approved."
+    },
+    {
+      "path": "docs/decisions/0001-keeperhub-first.md",
+      "purpose": "Why KeeperHub is the first competition.",
+      "readWhen": "Before replacing the first target.",
+      "owner": "Product Architect",
+      "updateTrigger": "Competition priority changes.",
+      "validation": "New official evidence and ADR required."
+    },
+    {
+      "path": "docs/decisions/0002-simulation-before-broadcast.md",
+      "purpose": "Why KeeperHub simulation and real broadcast are separate human-gated phases.",
+      "readWhen": "Before changing KeeperHub execution, credentials, wallet or broadcast boundaries.",
+      "owner": "Product Architect / Security",
+      "updateTrigger": "Direct Execution or broadcast model changes.",
+      "validation": "Tests prove the default path cannot broadcast."
+    },
+    {
+      "path": "docs/maintenance/known-issues.md",
+      "purpose": "Known issues and recurring problems.",
+      "readWhen": "Before debugging or risk review.",
+      "owner": "Debugger / Project Assistant",
+      "updateTrigger": "New recurring issue or resolved issue.",
+      "validation": "Issues include status and validation."
+    },
+    {
+      "path": "docs/maintenance/development-log.md",
+      "purpose": "Durable project progress log.",
+      "readWhen": "Before handoff or project review.",
+      "owner": "Project Assistant",
+      "updateTrigger": "Meaningful project state changes.",
+      "validation": "Entries link to relevant docs or files."
+    },
+    {
+      "path": "docs/maintenance/technical-debt.md",
+      "purpose": "Technical debt and cleanup candidates.",
+      "readWhen": "Before refactors or planning.",
+      "owner": "Project Assistant",
+      "updateTrigger": "Debt is found, resolved, or reprioritized.",
+      "validation": "Items have impact and owner/status."
+    },
+    {
+      "path": "docs/memory/README.md",
+      "purpose": "Project memory evidence and invalidation rules.",
+      "readWhen": "Before adding evidence, source hashes, retrieval records, or invalidations.",
+      "owner": "Project Assistant",
+      "updateTrigger": "Evidence schema, retrieval index, or invalidation policy changes.",
+      "validation": "Evidence JSONL and invalidation JSONL parse correctly."
+    },
+    {
+      "path": "docs/memory/retrieval-index.json",
+      "purpose": "Machine-readable project memory retrieval index.",
+      "readWhen": "Before summarizing or routing project memory reads.",
+      "owner": "Project Assistant",
+      "updateTrigger": "Durable docs, summaries, or memory routes change.",
+      "validation": "JSON parses and paths exist or are marked missing."
+    },
+    {
+      "path": "docs/memory/evidence/index.jsonl",
+      "purpose": "Evidence records for durable project memory and KG entries.",
+      "readWhen": "Before verifying durable memory claims.",
+      "owner": "Project Assistant",
+      "updateTrigger": "New durable memory or KG evidence is recorded.",
+      "validation": "Each non-empty line is valid JSON with required fields."
+    },
+    {
+      "path": "docs/memory/invalidations.jsonl",
+      "purpose": "Invalidated or superseded memory records.",
+      "readWhen": "Before trusting old project facts.",
+      "owner": "Project Assistant",
+      "updateTrigger": "Project facts, graph nodes, docs, APIs, or modules are superseded.",
+      "validation": "Each non-empty line is valid JSON with required fields."
+    },
+    {
+      "path": "docs/knowledge/graph-schema.md",
+      "purpose": "Knowledge graph node, edge, evidence, and validation schema.",
+      "readWhen": "Before creating or updating graph relationships.",
+      "owner": "Project Assistant",
+      "updateTrigger": "Graph schema or validation rules change.",
+      "validation": "Schema matches project-graph.json."
+    },
+    {
+      "path": "docs/knowledge/project-graph.json",
+      "purpose": "Machine-readable project relationship graph.",
+      "readWhen": "Before impact analysis or cross-layer work.",
+      "owner": "Project Assistant",
+      "updateTrigger": "Feature, module, file, API, DB, test, ADR, or risk relationships change.",
+      "validation": "All nodes and edges have evidence."
+    },
+    {
+      "path": "docs/knowledge/graph-index.md",
+      "purpose": "Human-readable graph summary and activation notes.",
+      "readWhen": "Before relationship lookup or handoff.",
+      "owner": "Project Assistant",
+      "updateTrigger": "project-graph.json changes.",
+      "validation": "Summary reflects current graph."
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "version": 1,
+  "updatedAt": "2026-07-18T14:13:42.000Z",
+  "schemaVersion": "1.1",
+  "nodes": [
+    {
+      "id": "feature.bounty-proof-execution",
+      "type": "feature",
+      "name": "BountyProof execution rail",
+      "summary": "Turns a verified opportunity into an offline handoff and human-gated KeeperHub simulation before any future broadcast.",
+      "evidence": ["docs/architecture/bounty-proof.md", "docs/features/bounty-radar.md"],
+      "status": "active",
+      "valid_from": "2026-07-18",
+      "valid_to": null,
+      "last_verified": "2026-07-18",
+      "source_hash": "sha256:2849093eced67de004acf3b444fc6bbb36272b49531ea9a492fc4e532c446b34"
+    },
+    {
+      "id": "module.keeperhub-client",
+      "type": "module",
+      "name": "KeeperHub simulate-only client",
+      "summary": "Server-only Direct Execution adapter with forced simulation, retries, redaction, and response safety validation.",
+      "evidence": ["src/lib/keeperhub/client.ts"],
+      "status": "active",
+      "valid_from": "2026-07-18",
+      "valid_to": null,
+      "last_verified": "2026-07-18",
+      "source_hash": "sha256:8508124df322af1ed655a90bc1c07de0f99522750556bede9ddd8fabca4c4671"
+    },
+    {
+      "id": "api.keeperhub-status",
+      "type": "api",
+      "name": "GET KeeperHub readiness",
+      "summary": "Returns boolean readiness and simulation/broadcast safety state without configuration values.",
+      "evidence": ["src/app/api/integrations/keeperhub/status/route.ts", "docs/api/contracts.md"],
+      "status": "active",
+      "valid_from": "2026-07-18",
+      "valid_to": null,
+      "last_verified": "2026-07-18",
+      "source_hash": "sha256:bccf4ad27ee2db0523b7ceec0648dcf56dba54e7e9f81fcaf6c7d01d3204d4a6"
+    },
+    {
+      "id": "api.proofs-simulate",
+      "type": "api",
+      "name": "POST BountyProof simulation",
+      "summary": "Recomputes proof and risk gates before an explicitly enabled KeeperHub simulation.",
+      "evidence": ["src/app/api/proofs/simulate/route.ts", "docs/api/contracts.md"],
+      "status": "active",
+      "valid_from": "2026-07-18",
+      "valid_to": null,
+      "last_verified": "2026-07-18",
+      "source_hash": "sha256:b3d34eca27681f324e59ef44a523bf0577938dd494c996a6c945ed3a8a70ee3c"
+    },
+    {
+      "id": "contract.opportunity-registry",
+      "type": "file",
+      "name": "OpportunityRegistry contract",
+      "summary": "Authorized append-only Sepolia evidence registry targeted by BountyProof record calls.",
+      "evidence": ["contracts/OpportunityRegistry.sol"],
+      "status": "active",
+      "valid_from": "2026-07-18",
+      "valid_to": null,
+      "last_verified": "2026-07-18",
+      "source_hash": "sha256:50d6bced8f3a4de452b1e3112918d32c05b349892a19055101999809f03c393e"
+    },
+    {
+      "id": "config.keeperhub-simulation-gate",
+      "type": "config",
+      "name": "KeeperHub simulation approval gate",
+      "summary": "Requires KEEPERHUB_SIMULATION_ENABLED=true before any external simulation request.",
+      "evidence": ["docs/decisions/0002-simulation-before-broadcast.md", "src/app/api/proofs/simulate/route.ts"],
+      "status": "active",
+      "valid_from": "2026-07-18",
+      "valid_to": null,
+      "last_verified": "2026-07-18",
+      "source_hash": "sha256:07e492beb96dc17fc298a72accbadc0656beb57536a3b6108d571c73a2200abe"
+    },
+    {
+      "id": "test.keeperhub-client",
+      "type": "test",
+      "name": "KeeperHub client unit tests",
+      "summary": "Covers forced simulation, official string encoding, retries, redaction, timeout, and response drift.",
+      "evidence": ["src/lib/keeperhub/client.test.ts"],
+      "status": "active",
+      "valid_from": "2026-07-18",
+      "valid_to": null,
+      "last_verified": "2026-07-18",
+      "source_hash": "sha256:1f176203cca4cb9aa1f28549c8eac7eab55dd72e2b3dfef29babd37842800b3d"
+    },
+    {
+      "id": "test.radar-e2e",
+      "type": "test",
+      "name": "Bounty Radar Chrome acceptance",
+      "summary": "Validates the safe default execution rail, responsive UI, APIs, risk gate, console, and network state.",
+      "evidence": ["tests/e2e/radar.spec.ts"],
+      "status": "active",
+      "valid_from": "2026-07-18",
+      "valid_to": null,
+      "last_verified": "2026-07-18",
+      "source_hash": "sha256:852eca81d206bb2e67cbb54a5e69ff3b857ec4a4862796e7716c3c94c2b3347e"
+    },
+    {
+      "id": "command.keeperhub-preflight",
+      "type": "command",
+      "name": "KeeperHub offline preflight",
+      "summary": "Checks fixed Sepolia and redacted configuration readiness without network access.",
+      "evidence": ["scripts/keeperhub-preflight.mjs"],
+      "status": "active",
+      "valid_from": "2026-07-18",
+      "valid_to": null,
+      "last_verified": "2026-07-18",
+      "source_hash": "sha256:a47a315e25e55d9def5ab3fd09c29cf281e180fb86f020c51e2942d4f479645b"
+    },
+    {
+      "id": "risk.public-simulation-auth",
+      "type": "risk",
+      "name": "Public simulation endpoint abuse",
+      "summary": "A hosted environment with an organization key needs server authentication and persistent rate limiting.",
+      "evidence": ["docs/maintenance/technical-debt.md", "docs/decisions/0002-simulation-before-broadcast.md"],
+      "status": "active",
+      "valid_from": "2026-07-18",
+      "valid_to": null,
+      "last_verified": "2026-07-18",
+      "source_hash": "sha256:da009053367e12b0f4ba80c9223513036b735817032a60c467c303def719d3a9"
+    },
+    {
+      "id": "adr.simulation-before-broadcast",
+      "type": "adr",
+      "name": "Simulation before broadcast",
+      "summary": "Separates safe preflight from a future human-approved KeeperHub MCP transaction.",
+      "evidence": ["docs/decisions/0002-simulation-before-broadcast.md"],
+      "status": "active",
+      "valid_from": "2026-07-18",
+      "valid_to": null,
+      "last_verified": "2026-07-18",
+      "source_hash": "sha256:07e492beb96dc17fc298a72accbadc0656beb57536a3b6108d571c73a2200abe"
+    }
+  ],
+  "edges": [
+    {"from":"module.keeperhub-client","to":"feature.bounty-proof-execution","type":"implements","evidence":["docs/architecture/bounty-proof.md"],"confidence":"confirmed","valid_from":"2026-07-18","valid_to":null,"last_verified":"2026-07-18","source_hash":"sha256:2849093eced67de004acf3b444fc6bbb36272b49531ea9a492fc4e532c446b34"},
+    {"from":"api.keeperhub-status","to":"feature.bounty-proof-execution","type":"implements","evidence":["docs/api/contracts.md"],"confidence":"confirmed","valid_from":"2026-07-18","valid_to":null,"last_verified":"2026-07-18","source_hash":"sha256:4af9f823e3170ce3b389b20cb1da3e5b0efd740fe597e0ad829b955c75680a66"},
+    {"from":"api.proofs-simulate","to":"feature.bounty-proof-execution","type":"implements","evidence":["docs/api/contracts.md"],"confidence":"confirmed","valid_from":"2026-07-18","valid_to":null,"last_verified":"2026-07-18","source_hash":"sha256:4af9f823e3170ce3b389b20cb1da3e5b0efd740fe597e0ad829b955c75680a66"},
+    {"from":"api.proofs-simulate","to":"module.keeperhub-client","type":"uses","evidence":["src/app/api/proofs/simulate/route.ts"],"confidence":"confirmed","valid_from":"2026-07-18","valid_to":null,"last_verified":"2026-07-18","source_hash":"sha256:b3d34eca27681f324e59ef44a523bf0577938dd494c996a6c945ed3a8a70ee3c"},
+    {"from":"feature.bounty-proof-execution","to":"contract.opportunity-registry","type":"uses","evidence":["docs/architecture/bounty-proof.md"],"confidence":"confirmed","valid_from":"2026-07-18","valid_to":null,"last_verified":"2026-07-18","source_hash":"sha256:2849093eced67de004acf3b444fc6bbb36272b49531ea9a492fc4e532c446b34"},
+    {"from":"api.proofs-simulate","to":"config.keeperhub-simulation-gate","type":"configured_by","evidence":["src/app/api/proofs/simulate/route.ts"],"confidence":"confirmed","valid_from":"2026-07-18","valid_to":null,"last_verified":"2026-07-18","source_hash":"sha256:b3d34eca27681f324e59ef44a523bf0577938dd494c996a6c945ed3a8a70ee3c"},
+    {"from":"module.keeperhub-client","to":"test.keeperhub-client","type":"tested_by","evidence":["src/lib/keeperhub/client.test.ts"],"confidence":"confirmed","valid_from":"2026-07-18","valid_to":null,"last_verified":"2026-07-18","source_hash":"sha256:1f176203cca4cb9aa1f28549c8eac7eab55dd72e2b3dfef29babd37842800b3d"},
+    {"from":"feature.bounty-proof-execution","to":"test.radar-e2e","type":"tested_by","evidence":["tests/e2e/radar.spec.ts"],"confidence":"confirmed","valid_from":"2026-07-18","valid_to":null,"last_verified":"2026-07-18","source_hash":"sha256:852eca81d206bb2e67cbb54a5e69ff3b857ec4a4862796e7716c3c94c2b3347e"},
+    {"from":"feature.bounty-proof-execution","to":"command.keeperhub-preflight","type":"validated_by","evidence":["scripts/keeperhub-preflight.mjs"],"confidence":"confirmed","valid_from":"2026-07-18","valid_to":null,"last_verified":"2026-07-18","source_hash":"sha256:a47a315e25e55d9def5ab3fd09c29cf281e180fb86f020c51e2942d4f479645b"},
+    {"from":"adr.simulation-before-broadcast","to":"risk.public-simulation-auth","type":"mitigates","evidence":["docs/decisions/0002-simulation-before-broadcast.md"],"confidence":"confirmed","valid_from":"2026-07-18","valid_to":null,"last_verified":"2026-07-18","source_hash":"sha256:07e492beb96dc17fc298a72accbadc0656beb57536a3b6108d571c73a2200abe"},
+    {"from":"config.keeperhub-simulation-gate","to":"risk.public-simulation-auth","type":"mitigates","evidence":["docs/decisions/0002-simulation-before-broadcast.md"],"confidence":"confirmed","valid_from":"2026-07-18","valid_to":null,"last_verified":"2026-07-18","source_hash":"sha256:07e492beb96dc17fc298a72accbadc0656beb57536a3b6108d571c73a2200abe"}
+  ]
+}
