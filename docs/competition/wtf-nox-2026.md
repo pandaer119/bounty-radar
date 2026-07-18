@@ -54,7 +54,7 @@
 - [x] 将合约与交易链接写入 README/本文
 - [x] 创建公开 GitHub 仓库并核对可访问性
 - [x] 部署可公开访问的 dApp
-- [ ] 录制 4 分钟以内演示视频
+- [x] 录制 4 分钟以内演示视频
 - [ ] 发布 X 帖子并标记 `@iEx_ec`
 - [ ] 在 DoraHacks 提交最终项目
 
@@ -72,3 +72,5 @@
 - Live dApp: <https://bounty-radar-pandaer119s-projects.vercel.app>
 - Vercel production deployment: `dpl_Eqcve35c4zYqHKq9QWKVQuw7jKtp`，状态 `Ready`
 - Public acceptance: 首页 `200`；健康、机会和合约字节码 API 均 `200`；客户端脚本包含 Nox UI 与正确的 Sepolia 合约地址。
+- Local demo master: `/Volumes/star/网页版剪映/成品视频/Bounty-Radar-Nox-参赛演示.mp4`
+- Demo QC: `123s`、`1920×1080`、`30fps`、H.264 + AAC；七个章节画面抽检通过，平均音量 `-19.7 dB`、峰值 `-2.0 dB`。公开视频链接待发布后补入。
