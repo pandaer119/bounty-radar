@@ -58,6 +58,15 @@ NEXT_PUBLIC_NOX_STRATEGY_VAULT_ADDRESS=0x...
 
 以上公开信息已通过 Sepolia RPC 二次读取核对；钱包所有者 EIP-712 签名后的浏览器本地解密也已成功验收，策略明文只在当前 React 内存中显示。
 
+### Public dApp
+
+- Production URL: <https://bounty-radar-pandaer119s-projects.vercel.app>
+- Vercel deployment ID: `dpl_Eqcve35c4zYqHKq9QWKVQuw7jKtp`
+- Framework preset: Next.js
+- Production status: `Ready`
+- Access protection: SSO deployment protection disabled，允许评委匿名访问
+- Online checks: 首页、`/api/health`、`/api/opportunities`、`/api/contracts/nox-strategy-vault` 均返回 `200`
+
 ### KeeperHub
 
 当前不自动部署。进入测试网前必须：

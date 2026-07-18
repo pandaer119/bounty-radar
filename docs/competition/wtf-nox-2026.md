@@ -52,8 +52,8 @@
 - [x] 部署 `ConfidentialStrategyVault` 到 Sepolia
 - [x] 完成一次加密写入 → owner 解密往返
 - [x] 将合约与交易链接写入 README/本文
-- [ ] 创建公开 GitHub 仓库并核对可访问性
-- [ ] 部署可公开访问的 dApp
+- [x] 创建公开 GitHub 仓库并核对可访问性
+- [x] 部署可公开访问的 dApp
 - [ ] 录制 4 分钟以内演示视频
 - [ ] 发布 X 帖子并标记 `@iEx_ec`
 - [ ] 在 DoraHacks 提交最终项目
@@ -68,3 +68,7 @@
 - Public handle: `0x0000aa36a72301afd7f9707d5d597fa098298b1f5404655f8188c442d0b78086`
 - On-chain updated time: `2026-07-18T16:18:48Z`
 - Owner decrypt acceptance: 钱包 EIP-712 签名后，浏览器成功解出并显示原始策略三项值；页面确认明文只保留在当前 React 内存，不写回链上。
+- Public GitHub: <https://github.com/pandaer119/bounty-radar>
+- Live dApp: <https://bounty-radar-pandaer119s-projects.vercel.app>
+- Vercel production deployment: `dpl_Eqcve35c4zYqHKq9QWKVQuw7jKtp`，状态 `Ready`
+- Public acceptance: 首页 `200`；健康、机会和合约字节码 API 均 `200`；客户端脚本包含 Nox UI 与正确的 Sepolia 合约地址。

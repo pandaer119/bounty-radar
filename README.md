@@ -2,6 +2,9 @@
 
 一个面向 AI Agent × Web3 赏金的决策与可验证执行工作台。它把官方活动证据、机会评分、风险门禁和链上证明草案放在同一条流水线中。
 
+- Live dApp: <https://bounty-radar-pandaer119s-projects.vercel.app>
+- Public GitHub: <https://github.com/pandaer119/bounty-radar>
+
 ![Bounty Radar 桌面端实测](docs/evidence/screenshots/bounty-radar-desktop.png)
 
 ## 当前能力
@@ -67,6 +70,8 @@ npm run keeperhub:handoff -- --opportunity-id keeperhub-agents-onchain-2026
 
 首选 [KeeperHub · Agents Onchain](https://dorahacks.io/hackathon/agents-onchain/detail)。比赛要求 Agent 通过 KeeperHub 完成真实链上交易，因此当前实现先完成可验证载荷、合约和安全执行边界；正式测试网部署与 KeeperHub 写操作必须在人工批准后进行。
 
-当前已报名并进入实际构建的是 [WTF!! Hackathon · Summer Edition](https://dorahacks.io/hackathon/wtf-hackathon/detail)，其 Nox 功能、测试和提交材料已进入部署验收阶段。
+当前已报名并完成公开 MVP 的是 [WTF!! Hackathon · Summer Edition](https://dorahacks.io/hackathon/wtf-hackathon/detail)，其 Nox 功能、测试、Sepolia 闭环和公开部署均已验收。
+
+WTF Nox 参赛版本已完成真实 Sepolia 部署、加密写入、owner-only 本地解密与公开 dApp 上线；剩余交付为演示视频、X 帖子和 DoraHacks 最终提交。
 
 项目设计、比赛规则与路线图见 [docs/INDEX.md](docs/INDEX.md)。

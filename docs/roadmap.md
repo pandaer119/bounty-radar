@@ -25,11 +25,11 @@
 
 ## Current Focus
 
-- WTF Hackathon 已报名；Nox Confidential Strategy Vault 已完成 Sepolia 部署、真实加密写入和 owner-only 本地解密闭环，当前进入公开提交材料阶段。
+- WTF Hackathon 已报名；Nox Sepolia 闭环、公开 GitHub 和公开 dApp 已完成，当前进入演示视频、X 帖子与 DoraHacks 最终提交阶段。
 
 ## Next Actions
 
-1. 创建公开 GitHub 与公开 dApp，录制 4 分钟以内演示，发布 X 帖子并提交 DoraHacks。
+1. 录制 4 分钟以内演示，发布 X 帖子并提交 DoraHacks。
 2. 7 月 27 日后确认赛前代码边界，连接 KeeperHub 官方 MCP。
 3. 提交前重新核验 WTF 与 KeeperHub 的发奖、KYC、税务和领取条件。
 
