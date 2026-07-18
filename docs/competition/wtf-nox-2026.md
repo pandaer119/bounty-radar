@@ -76,3 +76,4 @@
 - Demo QC: `123s`、`1920×1080`、`30fps`、H.264 + AAC；七个章节画面抽检通过，平均音量 `-19.7 dB`、峰值 `-2.0 dB`。
 - Public demo video: <https://github.com/pandaer119/bounty-radar/releases/download/v0.1.0-nox-demo/Bounty-Radar-Nox-Demo.mp4>
 - Demo SHA-256: `9fedfea3fd20c0db144efa896b3222571fb1dad3e22182d578c68495cbede4d9`
+- DoraHacks draft: Profile、Details、Team 与 Telegram 主联系方式已保存；Logo 使用 `docs/evidence/bounty-radar-logo.png`。备用联系方式、X 帖子与最终提交仍待完成。

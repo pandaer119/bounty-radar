@@ -69,6 +69,7 @@ The raw copy is 261 Unicode characters before X applies its fixed URL weighting,
 
 - Attach `/Volumes/star/网页版剪映/成品视频/Bounty-Radar-Nox-参赛演示.mp4` to the X post; the public GitHub Release URL above remains the durable downloadable master.
 - Publish the X post and capture its URL.
+- Confirm a real Discord, WhatsApp or WeChat backup contact in the DoraHacks Contact step; do not infer it from unrelated account names.
 - Paste the public video and X URLs into DoraHacks.
 - Recheck that the public GitHub, dApp, contract and transaction links open without login.
 - Submit only after the form preview shows the intended wallet/account and all public links.

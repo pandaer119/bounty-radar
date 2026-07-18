@@ -26,3 +26,4 @@
 - **2026-07-18 · Public GitHub and dApp** — 发布公开仓库 `pandaer119/bounty-radar`；Vercel 项目修正为 Next.js preset 并完成生产部署。关闭项目级 SSO 访问保护后，匿名首页与三条公开 API 实测均返回 `200`，客户端 bundle 包含正确 Nox UI 与 Sepolia 合约地址。
 - **2026-07-18 · Demo video master** — 生成并质检 WTF Nox 中文参赛演示成片 `/Volumes/star/网页版剪映/成品视频/Bounty-Radar-Nox-参赛演示.mp4`。最终版本为 123 秒、1920×1080、30fps、H.264 + AAC；重新捕获七个完整 HTML 章节，消除首版空白与缺帧，七时点画面抽检、音频流和音量检查全部通过。
 - **2026-07-18 · Public demo release** — 将已验收 MP4 作为 GitHub Release `v0.1.0-nox-demo` 资产公开发布；Range 请求返回 `206` 并成功读取前 1024 字节。公共资产名为 `Bounty-Radar-Nox-Demo.mp4`，本地与公开交付使用 SHA-256 `9fedfea3fd20c0db144efa896b3222571fb1dad3e22182d578c68495cbede4d9` 对齐。
+- **2026-07-18 · DoraHacks BUIDL draft** — 在已登录 DoraHacks 账号中创建 Bounty Radar 草稿，上传 480×480 Logo，并保存 Profile、Nox/产品详情、单人团队说明和 Telegram 主联系方式。GitHub、线上 dApp、公开 Demo 与 Sepolia 证据均已进入表单；真实备用联系方式与 X 登录/视频帖仍是最终提交前门禁。
