@@ -73,4 +73,6 @@
 - Vercel production deployment: `dpl_Eqcve35c4zYqHKq9QWKVQuw7jKtp`，状态 `Ready`
 - Public acceptance: 首页 `200`；健康、机会和合约字节码 API 均 `200`；客户端脚本包含 Nox UI 与正确的 Sepolia 合约地址。
 - Local demo master: `/Volumes/star/网页版剪映/成品视频/Bounty-Radar-Nox-参赛演示.mp4`
-- Demo QC: `123s`、`1920×1080`、`30fps`、H.264 + AAC；七个章节画面抽检通过，平均音量 `-19.7 dB`、峰值 `-2.0 dB`。公开视频链接待发布后补入。
+- Demo QC: `123s`、`1920×1080`、`30fps`、H.264 + AAC；七个章节画面抽检通过，平均音量 `-19.7 dB`、峰值 `-2.0 dB`。
+- Public demo video: <https://github.com/pandaer119/bounty-radar/releases/download/v0.1.0-nox-demo/Bounty-Radar-Nox-Demo.mp4>
+- Demo SHA-256: `9fedfea3fd20c0db144efa896b3222571fb1dad3e22182d578c68495cbede4d9`

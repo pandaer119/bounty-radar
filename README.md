@@ -4,6 +4,7 @@
 
 - Live dApp: <https://bounty-radar-pandaer119s-projects.vercel.app>
 - Public GitHub: <https://github.com/pandaer119/bounty-radar>
+- Demo video: <https://github.com/pandaer119/bounty-radar/releases/download/v0.1.0-nox-demo/Bounty-Radar-Nox-Demo.mp4>
 
 ![Bounty Radar 桌面端实测](docs/evidence/screenshots/bounty-radar-desktop.png)
 
@@ -72,6 +73,6 @@ npm run keeperhub:handoff -- --opportunity-id keeperhub-agents-onchain-2026
 
 当前已报名并完成公开 MVP 的是 [WTF!! Hackathon · Summer Edition](https://dorahacks.io/hackathon/wtf-hackathon/detail)，其 Nox 功能、测试、Sepolia 闭环和公开部署均已验收。
 
-WTF Nox 参赛版本已完成真实 Sepolia 部署、加密写入、owner-only 本地解密与公开 dApp 上线；剩余交付为演示视频、X 帖子和 DoraHacks 最终提交。
+WTF Nox 参赛版本已完成真实 Sepolia 部署、加密写入、owner-only 本地解密、公开 dApp 和 2 分 03 秒演示视频；剩余交付为 X 帖子和 DoraHacks 最终提交。
 
 项目设计、比赛规则与路线图见 [docs/INDEX.md](docs/INDEX.md)。

@@ -25,11 +25,11 @@
 
 ## Current Focus
 
-- WTF Hackathon 已报名；Nox Sepolia 闭环、公开 GitHub、公开 dApp 和 4 分钟内演示成片已完成，当前进入公开视频、X 帖子与 DoraHacks 最终提交阶段。
+- WTF Hackathon 已报名；Nox Sepolia 闭环、公开 GitHub、公开 dApp 和公开视频已完成，当前进入 X 帖子与 DoraHacks 最终提交阶段。
 
 ## Next Actions
 
-1. 发布已质检演示视频，发布 X 帖子并提交 DoraHacks。
+1. 将已质检演示视频附到 X 帖子，发布后提交 DoraHacks。
 2. 7 月 27 日后确认赛前代码边界，连接 KeeperHub 官方 MCP。
 3. 提交前重新核验 WTF 与 KeeperHub 的发奖、KYC、税务和领取条件。
 

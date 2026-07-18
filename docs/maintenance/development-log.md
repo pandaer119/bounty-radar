@@ -25,3 +25,4 @@
 - **2026-07-18 · Nox Sepolia end-to-end acceptance** — `ConfidentialStrategyVault` 已部署到 `0xB766Ca2571645b19b7DA65fb1774DB87F4eE4B37`；部署交易 `0x7661…8c96` 与首次加密写入 `0xc6d6…3fcd` 均在 Sepolia 成功确认。RPC 二次读取返回非零 Nox 句柄和 `2026-07-18T16:18:48Z` 更新时间；钱包所有者 EIP-712 签名后，浏览器成功完成本地解密且未把明文写回链上。
 - **2026-07-18 · Public GitHub and dApp** — 发布公开仓库 `pandaer119/bounty-radar`；Vercel 项目修正为 Next.js preset 并完成生产部署。关闭项目级 SSO 访问保护后，匿名首页与三条公开 API 实测均返回 `200`，客户端 bundle 包含正确 Nox UI 与 Sepolia 合约地址。
 - **2026-07-18 · Demo video master** — 生成并质检 WTF Nox 中文参赛演示成片 `/Volumes/star/网页版剪映/成品视频/Bounty-Radar-Nox-参赛演示.mp4`。最终版本为 123 秒、1920×1080、30fps、H.264 + AAC；重新捕获七个完整 HTML 章节，消除首版空白与缺帧，七时点画面抽检、音频流和音量检查全部通过。
+- **2026-07-18 · Public demo release** — 将已验收 MP4 作为 GitHub Release `v0.1.0-nox-demo` 资产公开发布；Range 请求返回 `206` 并成功读取前 1024 字节。公共资产名为 `Bounty-Radar-Nox-Demo.mp4`，本地与公开交付使用 SHA-256 `9fedfea3fd20c0db144efa896b3222571fb1dad3e22182d578c68495cbede4d9` 对齐。

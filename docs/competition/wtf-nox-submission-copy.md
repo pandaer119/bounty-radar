@@ -43,7 +43,7 @@ Next.js 16, React 19, TypeScript, Solidity 0.8.36, Hardhat 3, Viem, MetaMask, iE
 
 - GitHub: <https://github.com/pandaer119/bounty-radar>
 - Live dApp: <https://bounty-radar-pandaer119s-projects.vercel.app>
-- Demo video: `[public URL pending]`
+- Demo video: <https://github.com/pandaer119/bounty-radar/releases/download/v0.1.0-nox-demo/Bounty-Radar-Nox-Demo.mp4>
 - Contract: <https://sepolia.etherscan.io/address/0xB766Ca2571645b19b7DA65fb1774DB87F4eE4B37>
 - Deploy transaction: <https://sepolia.etherscan.io/tx/0x7661ee2c528676042608b391ed606802a21e4b2ae898d362d4abcd41abcd8c96>
 - Encrypted write transaction: <https://sepolia.etherscan.io/tx/0xc6d6a8e3c7278d6401b11da1ba3289c16f299d8909d690a2653ce24e3b3a3fcd>
@@ -67,8 +67,7 @@ The raw copy is 261 Unicode characters before X applies its fixed URL weighting,
 
 ## Final Gate
 
-- Upload or attach `/Volumes/star/网页版剪映/成品视频/Bounty-Radar-Nox-参赛演示.mp4` and capture the resulting public URL.
-- Replace `[public URL pending]` above.
+- Attach `/Volumes/star/网页版剪映/成品视频/Bounty-Radar-Nox-参赛演示.mp4` to the X post; the public GitHub Release URL above remains the durable downloadable master.
 - Publish the X post and capture its URL.
 - Paste the public video and X URLs into DoraHacks.
 - Recheck that the public GitHub, dApp, contract and transaction links open without login.
